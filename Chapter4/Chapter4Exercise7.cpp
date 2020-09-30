@@ -11,8 +11,9 @@ inline void sort(Container& c)
 	std::sort(std::begin(c), std::end(c));
 }
 
-int main() {
-cout << '\n';
+int main() 
+{
+	cout << '\n';
 	cout << "-----------------------------------------------\n";
 	cout << "Exercise #7\n";
 	cout << '\n';
@@ -97,5 +98,7 @@ cout << '\n';
 		cout << "Enter a single-digit number, an operator, and a second single-digit number to start again.\n";
 		cout << "Press CTRL+Z and enter to exit.\n";
 		cout << '\n';
+		
+	}
 
 }
