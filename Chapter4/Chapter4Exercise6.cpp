@@ -26,7 +26,7 @@ int main() {
 
 	// Can't use switch for this program as it doesn't accept string variables
 
-	for (string input; cin >> input >> input;) {
+	for (string input; cin >> input;) {
 		if (input == word[0])
 			cout << 0 << '\n';
 		else if (input == word[1])
