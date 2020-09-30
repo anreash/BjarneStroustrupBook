@@ -53,36 +53,36 @@ int main()
 		*/
 		cout << computer[round] << '\n';
 		switch (human) {
-		case 'r':
-			if (computer[round] == 's') {
+		case rock:
+			if (computer[round] == scissors) {
 				cout << "You win. YOU. ROCK. \n";
 				++human_score;
 			}
-			else if (computer[round] == 'p') {
+			else if (computer[round] == paper) {
 				cout << "You lose. I crumpled you. \n";
 				++computer_score;
 			}
 			else
 				cout << "Draw. Shale we try again? \n";
 			break;
-		case 'p':
-			if (computer[round] == 'r') {
+		case paper:
+			if (computer[round] == rock) {
 				cout << "You win. You're on a roll. \n";
 				++human_score;
 			}
-			else if (computer[round] == 's') {
+			else if (computer[round] == scissors) {
 				cout << "You lose. That's tear-able.\n";
 				++computer_score;
 			}
 			else
 				cout << "Draw. That's a wrap. \n";
 			break;
-		case 's':
-			if (computer[round] == 'p') {
+		case scissors:
+			if (computer[round] == paper) {
 				cout << "You win. You're a cut above the rest. \n";
 				++human_score;
 			}
-			else if (computer[round] == 'r') {
+			else if (computer[round] == rock) {
 				cout << "You lose. Shear-iously. \n";
 				++computer_score;
 			}
