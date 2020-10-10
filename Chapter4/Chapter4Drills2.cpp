@@ -17,7 +17,7 @@ int main() {
 	int input = 0;
 	vector<int> number;
 
-	cout << "Enter a number: \n";
+	cout << "Enter a number. \n";
 	cout << "To exit a program, enter a non-number. \n";
 
 	while (cin >> input) {
@@ -29,9 +29,12 @@ int main() {
 				cout << "The larger value is " << number[x - 1] << ".\n";
 				cout << "The smaller value is " << number[x - 2] << ".\n";
 			}
-			else {
+			else if (number[x - 2] > number[x - 1]) {
 				cout << "The larger value is " << number[x - 2] << ".\n";
 				cout << "The smaller value is " << number[x - 1] << ".\n";
+			}
+			else {
+				cout << "The numbers are equal.\n";
 			}
 		}
 	}
