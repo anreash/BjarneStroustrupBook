@@ -14,8 +14,8 @@ inline void sort(Container& c)
 int main() {
 	
 	int x = 0;
-	int input = 0;
-	vector<int> number;
+	double input = 0;
+	vector<double> number;
 
 	cout << "Enter a number. \n";
 	cout << "To exit a program, enter a non-number. \n";
@@ -23,7 +23,7 @@ int main() {
 	while (cin >> input) {
 		number.push_back(input);
 		++x;
-		int divisible = x % 2;
+		const int divisible = x % 2;
 		if (divisible == 0) {
 			if (number[x - 2] < number[x - 1]) {
 				cout << "The larger value is " << number[x - 1] << ".\n";
