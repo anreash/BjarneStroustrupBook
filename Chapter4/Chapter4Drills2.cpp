@@ -13,22 +13,25 @@ inline void sort(Container& c)
 
 int main() {
 
-	double input = 0;
+	double num = 0;
+	string unit = "-";
 	vector<double> number;
+	vector<string> units;
 	double largest = 0;
 	double smallest = 0;
 
-	cout << "Enter a number. To exit the program, enter a non-number.\n";
+	cout << "Enter a number and unit. Accepted units are cm, m in, ft. \n";
 
-	for (int i = 0; cin >> input; ++i) {
-		number.push_back(input);
-		sort(number);
-		if (input == number[0]) {
-			cout << input << " is the smallest so far.\n";
+	while (cin >> input >> unit) {
+		if (unit == cm || unit == m || unit == in || unit == ft) {
+			number.push_back(input);
+			units.push_back(unit);
+			if (unit == cm) {
+
+			}
 		}
-		else if (input == number[number.size() - 1]) {
-			cout << input << " is the largest so far.\n";
+		else {
+			cout << "Invalid unit. \n";
 		}
 	}
-
 }
