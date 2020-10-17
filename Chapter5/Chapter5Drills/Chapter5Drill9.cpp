@@ -12,7 +12,7 @@ using namespace std;
 int main() {
 	try {
 		string s = "ape";
-		bool c = "fool" < s;
+		bool c = "fool < s";
 		if (c)
 			cout << "Success!\n";
 			keep_window_open();
