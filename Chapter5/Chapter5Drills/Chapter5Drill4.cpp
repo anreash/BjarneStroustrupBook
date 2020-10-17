@@ -1,7 +1,7 @@
 #include "std_lib_facilities.h"
 using namespace std;
 
-//IDE identified 1 error
+//1>C:\Dev\CodeTester\CodeTester\main.cpp(8,11): error C2065: 'success': undeclared identifier
 
 int main() {
 	try {
