@@ -1,6 +1,8 @@
 #include "std_lib_facilities.h"
 using namespace std;
 
+//IDE identified 2 errors
+
 int main() {
 	try {
 		cout << "Success!\n";
