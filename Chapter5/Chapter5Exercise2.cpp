@@ -9,7 +9,6 @@ double ctok(double c)		// converts Celsius to Kelvin
 
 
 int main() {
-	try {
 		double c = 0;			// declare input variable
 		cin >> c;				// retrieve temperature to input variable
 		double k = ctok(c);		// convert temperature
@@ -17,17 +16,6 @@ int main() {
 
 		keep_window_open();
 		return 0;
-	}
-	catch (exception& e) {
-		cerr << "error: " << e.what() << '\n';
-		keep_window_open();
-		return 1;
-	}
-	catch (...) {
-		cerr << "Oops: unknown exception!\n";
-		keep_window_open();
-		return 2;
-	}
 }
 
 /*
