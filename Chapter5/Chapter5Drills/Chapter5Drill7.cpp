@@ -8,7 +8,8 @@ using namespace std;
 
 int main() {
 	try {
-		if (cond) 
+		int sample = 0;
+		if (sample == 0) 
 			cout << "Success!\n";
 		else 
 			cout << "Fail!\n";
