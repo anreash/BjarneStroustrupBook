@@ -1,11 +1,11 @@
 #include "std_lib_facilities.h"
 using namespace std;
 
-//identified 5 errors
+//IDE identified 5 errors
 
 int main() {
 	try {
-		cout << "Success" << !\n"
+		cout << "Success" << "!\n";
 			keep_window_open();
 		return 0;
 	}
