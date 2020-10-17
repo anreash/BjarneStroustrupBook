@@ -10,8 +10,8 @@ using namespace std;
 int main() {
 	try {
 		vector<int>v(10);
-		v(5) = 7;
-		if (v(5) != 7)
+		v[5] = 7;
+		if (v[5] == 7)
 			cout << "Success!\n";
 			keep_window_open();
 		return 0;
