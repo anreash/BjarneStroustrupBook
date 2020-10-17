@@ -7,13 +7,14 @@ SuccesPlease enter a character to exit
 
 From what I understand, the for-statement works like its reading and iterating each
 characters of the value of the string. But the fragment sample is incomplete.
-
+When I hover my mouse to the string, this pops up:
+(const char[10])"Success!\n"
 */
 
 int main() {
 	try {
 		string s = "Success!\n";
-		for (int i = 0; i < 6; ++i)
+		for (int i = 0; i < 10; ++i)
 			cout << s[i];
 			keep_window_open();
 		return 0;
