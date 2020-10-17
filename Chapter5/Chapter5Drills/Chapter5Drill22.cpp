@@ -8,8 +8,8 @@ using namespace std;
 
 int main() {
 	try {
-		string<char> s = "Success!\n";
-		for (int i = 0; i <= 10; ++i)
+		string s = "Success!\n";
+		for (int i = 0; i < 10; ++i)
 			cout << s[i];
 		keep_window_open();
 		return 0;
