@@ -11,13 +11,15 @@ calling operator '*' to avoid overflow (io.2)
 
 Reading this, this looks like a compiler-time error, but is not being detected
 or stopped by the compiler.
+
+Changed data type of variable x, and the condition after if-statement
 */
 
 int main() {
 	try {
-		int x = 2; 
-		double d = 5 / (x - 2);
-		if (d == 2 * x + 0.5) 
+		double x = 4;
+		double d = 5 / (x - 2);			// answer is 2.5
+		if (d == x / 2 + 0.5)			
 			cout << "Success!\n";
 		keep_window_open();
 		return 0;
