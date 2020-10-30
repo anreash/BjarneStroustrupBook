@@ -12,11 +12,11 @@ int main()
 		int score;
 
 		cout << "Enter name and corresponding score.\n";
-		cout << "Enter exit0 to terminate program.\n\n";
+		cout << "Enter NoName 0 to exit program.\n\n";
 
 		for (int i = 0; cin >> name >> score;)
 		{
-			if (name == "exit")
+			if (name == "NoName" && score == 0)
 				break;
 			for (string temp : names)
 			{
@@ -27,9 +27,11 @@ int main()
 			scores.push_back(score);
 		}
 
-		cout << "List of Scores: \n";
-		for (int i = 0; i < name.size()-1; ++i)
+		cout << "\n\nList of Scores:\n";
+		for (int i = 0; i < name.size() - 1; ++i)
 			cout << names[i] << " " << scores[i] << '\n';
+
+		cout << "\n\n";
 	}
 
 	catch (exception& e) {
