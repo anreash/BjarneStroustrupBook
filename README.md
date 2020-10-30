@@ -4,7 +4,9 @@ This is a compilation of samples, drill and exercises answers to Programming Pri
 Answers reference:
 
 https://bumpyroadtocode.com/category/chapter-03-principles-and-practice-using-c/
+
 https://github.com/Chrinkus/stroustrup-ppp
+
 https://programming-principles-and-pratice-using-c.readthedocs.io/en/latest/ch3-objects_types_and_values.html#exercises
 
 
